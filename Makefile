@@ -1,11 +1,11 @@
-all: add_nbo
+all: add-nbo
 
 add-nbo: add-nbo.o
-	g++ -o add_nbo add_nbo.o
+	g++ -o add-nbo add-nbo.o
 
-add-nbo.o: add_nbo.cpp
-	g++ -c -o add_nbo.o add_nbo.cpp
+add-nbo.o: add-nbo.cpp
+	g++ -c -o add-nbo.o add-nbo.cpp
 
 clean:
-	rm -f *.o
 	rm -f add-nbo.o
+	rm -f *.o
